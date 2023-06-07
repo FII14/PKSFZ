@@ -7,6 +7,7 @@
         <li>Buka Aplikasi Termux.</li>
         <li>Update repositori Termux dengan mengetikan perintah: <pre>pkg update</pre> tunggu hingga proses update repositori selesai.</li>
         <li>Instal git untuk clone repositori PKSFZ dengan mengetikan perintah: <pre>pkg install git</pre> tunggu hingga proses instal selesai.</li>
+        <li>Clone repositori PKSFZ dengan mengetikan perintah: <pre>git clone https://github.com/FII14/PKSFZ</pre> tunggu hingga proses clone selesai.</li>
     </ol>
     <li><b>Linux</b></li>
 </ul>
