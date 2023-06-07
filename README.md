@@ -5,6 +5,7 @@
     <li><b>Termux</b></li>
     <ol>
         <li>Buka Aplikasi Termux.<li>
+        <p>Update repositori Termux dengan mengetikan perintah <pre>pkg update</pre> tunggu hingga proses update repositori selesai.</p>
     </ol>
     <li><b>Linux</b></li>
 </ul>
