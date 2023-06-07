@@ -3,7 +3,7 @@
     <h2>Cara menginstal PKSFC</h2>
     <ul>
         <li><b>Termux</b></li>
-        <ol>
+        <ol type="1">
             <li>Buka Aplikasi Termux.</li>
             <li>Update repositori Termux dengan mengetikkan perintah: <pre>pkg update</pre> tunggu hingga proses update repositori selesai.</li>
             <li>Instal Git dengan mengetikkan perintah: <pre>pkg install git</pre> tunggu hingga proses instalasi selesai.</li>
