@@ -25,4 +25,4 @@
     </ol>
 </ul>
 <h2>Pemberitahuan</h2>
-<p>Harap dicatat bahwa penggunaan fcrackzip untuk memecahkan kata sandi file ZIP harus sesuai dengan hukum dan aturan yang berlaku di wilayah Anda.</p>
+<p>Bahwa penggunaan PKSFZ untuk memecahkan kata sandi file ZIP harus sesuai dengan hukum dan aturan yang berlaku di wilayah Anda.</p>
