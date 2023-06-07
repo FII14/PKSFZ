@@ -39,5 +39,3 @@ with open(wordlist_file, 'r') as wordlist:
 
     if not password_found:
         print("Kata sandi tidak ditemukan dalam wordlist.")
-
- 
