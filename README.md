@@ -4,7 +4,7 @@
 <ul>
     <li><b>Termux</b></li>
     <ol>
-        <li>Buka Aplikasi Termux.<li>
+        <li>Buka Aplikasi Termux.</li>
         <li>Update repositori Termux dengan mengetikan perintah: <pre>pkg update</pre> tunggu hingga proses update repositori selesai.</li>
         <li>Instal git untuk clone repositori PKSFZ dengan mengetikan perintah: <pre>pkg install git</pre> tunggu hingga proses instal selesai.</li>
     </ol>
