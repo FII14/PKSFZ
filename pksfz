@@ -1,0 +1,22 @@
+#!/usr/bin/env python3
+
+
+        try:
+
+            with zipfile.ZipFile(zip_filename, 'r') as zip_file:
+
+                zip_file.extractall(pwd=password.encode())
+
+                print(f"\nKata sandi ditemukan: {password}")
+
+                password_found = True
+
+                break
+
+        except Exception:
+
+            pass
+
+    if not password_found:
+
+        print("Kata sandi tidak ditemukan dalam wordlist.")
