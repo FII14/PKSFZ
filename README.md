@@ -3,5 +3,8 @@
 <h2>Cara menginstal PKSFC</h2>
 <ul>
     <li><b>Termux</b></li>
+    <ol>
+        <li>Buka Aplikasi Termux.<li>
+    </ol>
     <li><b>Linux</b></li>
 </ul>
