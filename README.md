@@ -24,3 +24,5 @@
         <li>Jalankan program PKSFZ dengan menjalankan perintah: <pre>python3 pksfz.py</pre></li>
     </ol>
 </ul>
+<h2>Pemberitahuan</h2>
+<p>Harap dicatat bahwa penggunaan fcrackzip untuk memecahkan kata sandi file ZIP harus sesuai dengan hukum dan aturan yang berlaku di wilayah Anda.</p>
