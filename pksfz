@@ -13,37 +13,37 @@ import os
 
 while True:
     # Meminta input nama file ZIP
-    zip_filename = input("Masukkan nama file ZIP: ")
+    nama_file_zip = input("Masukkan nama file ZIP: ")
 
     # Memeriksa apakah file ZIP ada
-    if not os.path.isfile(zip_filename):
+    if not os.path.isfile(nama_file_zip):
         print("File ZIP tidak ditemukan.")
     else:
         break
 
 while True:
     # Meminta input nama file wordlist
-    wordlist_file = input("Masukkan nama file wordlist: ")
+    nama_file_wordlist = input("Masukkan nama file wordlist: ")
 
     # Memeriksa apakah file wordlist ada
-    if not os.path.isfile(wordlist_file):
+    if not os.path.isfile(nama_file_wordlist):
         print("File wordlist tidak ditemukan.")
     else:
         break
 
 # Membaca file wordlist dan mencoba kata sandi
-with open(wordlist_file, 'r') as wordlist:
-    password_found = False
-    for password in wordlist:
-        password = password.strip()
+with open(nama_file_wordlist, 'r') as wordlist:
+    kata_sandi_ditemukan = False
+    for kata_sandi in wordlist:
+        kata_sandi = kata_sandi.strip()
         try:
-            with zipfile.ZipFile(zip_filename, 'r') as zip_file:
-                zip_file.extractall(pwd=password.encode())
-                print(f"\nKata sandi ditemukan: {password}")
-                password_found = True
+            with zipfile.ZipFile(nama_file_zip, 'r') as file_zip:
+                file_zip.extractall(pwd=kata_sandi.encode())
+                print(f"\nKata sandi ditemukan: {kata_sandi}")
+                kata_sandi_ditemukan = True
                 break
         except Exception:
             pass
 
-    if not password_found:
+    if not kata_sandi_ditemukan:
         print("Kata sandi tidak ditemukan dalam wordlist.")
