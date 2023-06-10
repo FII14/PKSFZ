@@ -1,16 +1,15 @@
-#!/usr/bin/env python3
-
 import zipfile
 import os
 import time
 import sys
 
-# Membersihkan layar pada Windows
+# Menggunakan perintah 'cls' pada Windows dan 'clear' pada sistem operasi lainnya
 if os.name == 'nt':
     os.system('cls')
-    
 else:
     os.system('clear')
+
+
 
 print("""
 +------------------------------------------+
@@ -50,12 +49,3 @@ while True:
         print("\nKeluar dari program PKSFZ")
         exit(0)
 
-# Membaca file wordlist dan mencoba kata sandi
-with open(nama_file_wordlist, 'r') as wordlist:
-    kata_sandi_ditemukan = False
-    for kata_sandi in wordlist:
-        kata_sandi = kata_sandi.strip()
-        try:
-            # Membersihkan layar pada setiap iterasi
-
-        
