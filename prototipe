@@ -48,7 +48,7 @@ with open(nama_file_wordlist, 'r') as wordlist:
         kata_sandi = kata_sandi.strip()
         try:
             with zipfile.ZipFile(nama_file_zip, 'r') as file_zip:
-                sys.stdout.write(f"\rMencoba kata sandi: {kata_sandi}")
+                sys.stdout.write(f"\rMencoba kata sandi: {kata_sandi}     ")
                 sys.stdout.flush()
                 time.sleep(0.5)  # Waktu jeda animasi
                 file_zip.extractall(pwd=kata_sandi.encode())
@@ -57,8 +57,10 @@ with open(nama_file_wordlist, 'r') as wordlist:
                 kata_sandi_ditemukan = True
                 break
         except Exception:
-            pass
+            sys.stdout.write("\rMencoba kata sandi:                    ")
+            sys.stdout.flush()
 
     if not kata_sandi_ditemukan:
-        sys.stdout.write("\n")
+        sys.stdout.write("\rMencoba kata sandi:                    \n")
         print("Kata sandi tidak ditemukan dalam wordlist.")
+
