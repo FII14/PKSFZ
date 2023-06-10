@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 
 print("""
-#------------------------------------------#
-# Program : Memecahkan kata sandi file ZIP #
-# Pembuat : Rofi [FII14]                   #  
-# Github  : https://github.com/FII14/PKSFZ #
-#------------------------------------------#
-# COPYRIGHT (C) 2023 FII14                 #
-#------------------------------------------#
++------------------------------------------+
+| Program : Memecahkan kata sandi file ZIP |
+| Pembuat : Rofi [FII14]                   |  
+| Github  : https://github.com/FII14/PKSFZ |
+
+|------------------------------------------#
+| COPYRIGHT (C) 2023 FII14                 #
++------------------------------------------#
 """)
 
 import zipfile
