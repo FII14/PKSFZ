@@ -50,7 +50,7 @@ with open(nama_file_wordlist, 'r') as wordlist:
             with zipfile.ZipFile(nama_file_zip, 'r') as file_zip:
                 sys.stdout.write(f"\rMencoba kata sandi: {kata_sandi} ")
                 sys.stdout.flush()
-                time.sleep(0.5)  # Waktu jeda animasi
+                # time.sleep(0.5)  # Waktu jeda animasi
                 file_zip.extractall(pwd=kata_sandi.encode())
                 sys.stdout.write("\n")
                 print(f"Kata sandi ditemukan: {kata_sandi}")
