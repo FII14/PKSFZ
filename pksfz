@@ -1,11 +1,14 @@
-#!/usr/bin/env python3
-
 import zipfile
 import os
 import time
 import sys
 
-os.system("clear")
+# Membersihkan layar pada Windows
+if os.name == 'nt':
+    os.system('cls')
+    
+else:
+    os.system('clear')
 
 print("""
 +------------------------------------------+
@@ -51,20 +54,6 @@ with open(nama_file_wordlist, 'r') as wordlist:
     for kata_sandi in wordlist:
         kata_sandi = kata_sandi.strip()
         try:
-            with zipfile.ZipFile(nama_file_zip, 'r') as file_zip:
-                sys.stdout.write(f"\rMencoba kata sandi: {kata_sandi} ")
-                sys.stdout.flush()
-                time.sleep(0.1)  # Waktu jeda animasi
-                file_zip.extractall(pwd=kata_sandi.encode())
-                sys.stdout.write("\n")
-                print(f"\nKata sandi ditemukan: {kata_sandi}")
-                kata_sandi_ditemukan = True
-                break
-        except Exception:
-            sys.stdout.write("\rMencoba kata sandi:                    ")
-            sys.stdout.flush()
+            # Membersihkan layar pada setiap iterasi
 
-    if not kata_sandi_ditemukan:
-        sys.stdout.write("\rMencoba kata sandi:                    \n")
-        print("\nKata sandi tidak ditemukan dalam wordlist.")
-
+        
