@@ -5,11 +5,10 @@ print("""
 | Program : Memecahkan kata sandi file ZIP |
 | Pembuat : Rofi [FII14]                   |  
 | Github  : https://github.com/FII14/PKSFZ |
-
-|------------------------------------------#
-| COPYRIGHT (C) 2023 FII14                 #
-+------------------------------------------#
-""")
++------------------------------------------+
+| COPYRIGHT (C) 2023 FII14                 |
++------------------------------------------+
+"""
 
 import zipfile
 import os
