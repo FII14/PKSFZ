@@ -1,35 +1,33 @@
-#!/usr/bin/env python3
-
-#------------------------------------------#
-# Program : Memecahkan kata sandi file ZIP #
-# Pembuat : Rofi [FII14]                   #  
-# Github  : https://github.com/FII14/PKSFZ #
-#------------------------------------------#
-# COPYRIGHT (C) 2023 FII14                 #
-#------------------------------------------#
-
 import zipfile
 import os
 
 while True:
-    # Meminta input nama file ZIP
-    nama_file_zip = input("Masukkan nama file ZIP: ")
+    try:
+        # Meminta input nama file ZIP
+        nama_file_zip = input("Masukkan nama file ZIP: ")
 
-    # Memeriksa apakah file ZIP ada
-    if not os.path.isfile(nama_file_zip):
-        print("File ZIP tidak ditemukan.")
-    else:
-        break
+        # Memeriksa apakah file ZIP ada
+        if not os.path.isfile(nama_file_zip):
+            print("File ZIP tidak ditemukan.")
+        else:
+            break
+    except KeyboardInterrupt:
+        print("\nKeluar dari program PKSFZ")
+        exit(0)
 
 while True:
-    # Meminta input nama file wordlist
-    nama_file_wordlist = input("Masukkan nama file wordlist: ")
+    try:
+        # Meminta input nama file wordlist
+        nama_file_wordlist = input("Masukkan nama file wordlist: ")
 
-    # Memeriksa apakah file wordlist ada
-    if not os.path.isfile(nama_file_wordlist):
-        print("File wordlist tidak ditemukan.")
-    else:
-        break
+        # Memeriksa apakah file wordlist ada
+        if not os.path.isfile(nama_file_wordlist):
+            print("File wordlist tidak ditemukan.")
+        else:
+            break
+    except KeyboardInterrupt:
+        print("\nKeluar dari program PKSFZ")
+        exit(0)
 
 # Membaca file wordlist dan mencoba kata sandi
 with open(nama_file_wordlist, 'r') as wordlist:
@@ -47,3 +45,5 @@ with open(nama_file_wordlist, 'r') as wordlist:
 
     if not kata_sandi_ditemukan:
         print("Kata sandi tidak ditemukan dalam wordlist.")
+
+       
