@@ -15,16 +15,18 @@ if [[ $EUID != 0 ]]; then
     
 else
     read -p "Apakah Anda mau menginstal PKSFZ [iya/tidak]: " nanya
+
         if [[ $nanya == "iya" ]]; then
             chmod +x pksfz
             mv pksfz /usr/bin
             echo "PKSFZ berhasil diinstal."
             sleep 3
-            echo "Untuk menjalanka
-         nnya ketikkan perintah 'pksfz'."
+            echo "Untuk menjalankannya ketikkan perintah 'pksfz'."
             exit 0
+
         elif [[ $nanya == "tidak" ]]; then
             exit 0
+
         else
             echo "Masukkan salah."
             exit 1
