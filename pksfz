@@ -3,12 +3,10 @@ import os
 import time
 import sys
 
-# Menggunakan perintah 'cls' pada Windows dan 'clear' pada sistem operasi lainnya
 if os.name == 'nt':
     os.system('cls')
 else:
     os.system('clear')
-
 
 
 print("""
@@ -49,3 +47,25 @@ while True:
         print("\nKeluar dari program PKSFZ")
         exit(0)
 
+# Membaca file wordlist dan mencoba kata sandi
+with open(nama_file_wordlist, 'r') as wordlist:
+    kata_sandi_ditemukan = False
+    for kata_sandi in wordlist:
+        kata_sandi = kata_sandi.strip()
+        try:
+            with zipfile.ZipFile(nama_file_zip, 'r') as file_zip:
+                sys.stdout.write(f"\rMencoba kata sandi: {kata_sandi}     ")
+                sys.stdout.flush()
+                time.sleep(0.5)  # Waktu jeda animasi
+                file_zip.extractall(pwd=kata_sandi.encode())
+                sys.stdout.write("\n")
+                print(f"Kata sandi ditemukan: {kata_sandi}")
+                kata_sandi_ditemukan = True
+                break
+        except Exception:
+            sys.stdout.write("\rMencoba kata sandi:                    ")
+            sys.stdout.flush()
+
+    if not kata_sandi_ditemukan:
+        sys.stdout.write("\rMencoba kata sandi:                    \n")
+        print("Kata sandi tidak ditemukan dalam wordlist.")
