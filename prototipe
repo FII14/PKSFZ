@@ -53,7 +53,7 @@ with open(nama_file_wordlist, 'r') as wordlist:
                 time.sleep(0.1)  # Waktu jeda animasi
                 file_zip.extractall(pwd=kata_sandi.encode())
                 sys.stdout.write("\n")
-                print(f"Kata sandi ditemukan: {kata_sandi}")
+                print(f"\nKata sandi ditemukan: {kata_sandi}")
                 kata_sandi_ditemukan = True
                 break
         except Exception:
@@ -62,5 +62,5 @@ with open(nama_file_wordlist, 'r') as wordlist:
 
     if not kata_sandi_ditemukan:
         sys.stdout.write("\rMencoba kata sandi:                    \n")
-        print("Kata sandi tidak ditemukan dalam wordlist.")
+        print("\nKata sandi tidak ditemukan dalam wordlist.")
 
