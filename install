@@ -1,6 +1,14 @@
 #!/bin/bash
 # script untuk menginstal PKSFZ
 
+#+------------------------------------------+
+#| Program : Pemecah kata sandi file ZIP    |
+#| Pembuat : Rofi [FII14]                   |  
+#| Github  : https://github.com/FII14/PKSFZ |
+#+------------------------------------------+
+#| COPYRIGHT (C) 2023 FII14                 |
+#+------------------------------------------+
+
 if [[ $EUID != 0 ]]; then
     echo "Silahkan jalankan sebagai root."
     exit 1
