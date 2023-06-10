@@ -2,7 +2,7 @@
 
 print("""
 +------------------------------------------+
-| Program : Memecahkan kata sandi file ZIP |
+| Program : Pemecah kata sandi file ZIP    |
 | Pembuat : Rofi [FII14]                   |  
 | Github  : https://github.com/FII14/PKSFZ |
 +------------------------------------------+
