@@ -1,8 +1,14 @@
 #!/bin/bash
 # script untuk menginstal PKSFZ
 
-chmod +x pksfz
-mv pksfz /usr/bin
-echo "PKSFZ berhasil diinstal."
-sleep 3
-echo "Untuk menjalankannya ketikkan perintah 'pksfz'."
+if [[ $EUID != 0 ]]; then
+    echo "Silahkan jalankan sebagai root."
+    exit 1
+    
+else
+    chmod +x pksfz
+    mv pksfz /usr/bin
+    echo "PKSFZ berhasil diinstal."
+    sleep 3
+    echo "Untuk menjalankannya ketikkan perintah 'pksfz'."
+fi
