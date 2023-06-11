@@ -6,6 +6,8 @@ PKSFZ adalah sebuah program sederhana yang ditulis dalam Python3 yang bertujuan 
 
 ## Instalasi 
 
+Untuk instalasi PKSFZ sangatlah mudah Anda cukup mengetikkan perintah-perintah yang ada dibawah ini:
+
 ```
 # Kloning repositori PKSFZ dari GitHub ke direktori lokal. 
 $ git clone https://github.com/FII14/PKSFZ
