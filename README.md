@@ -25,7 +25,7 @@ $ chmod +x instal
 $ ./instal
 ```
 
-Untuk pengguna Windows Anda dapat mendownload Source codenya  [dosini](https://github.com/FII14/PKSFZ/archive/refs/heads/main.zip).
+Untuk pengguna Windows Anda dapat mendownload Source codenya  [disini](https://github.com/FII14/PKSFZ/archive/refs/heads/main.zip).
 
 ## Lisensi
 
