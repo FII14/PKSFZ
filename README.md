@@ -6,7 +6,7 @@ PKSFZ adalah sebuah program sederhana yang ditulis dalam Python3 yang bertujuan 
 
 ## Instalasi di Kali Linux
 
-Untuk instalasi PKSFZ sangatlah mudah Anda cukup mengetikkan perintah-perintah yang ada dibawah ini:
+Untuk instalasi PKSFZ di Kali Linux sangatlah mudah Anda cukup mengetikkan perintah-perintah yang ada dibawah ini:
 
 ```
 # Kloning repositori PKSFZ dari GitHub ke direktori lokal. 
