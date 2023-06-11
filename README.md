@@ -7,13 +7,18 @@ PKSFZ adalah sebuah program sederhana yang ditulis dalam Python3 yang bertujuan 
 ## Instalasi 
 
 ```
+# Mengkloning repositori PKSFZ dari GitHub ke direktori lokal. 
 $ git clone https://github.com/FII14/PKSFZ
 
+# Mengubah direktori kerja saat ini ke direktori PKSFZ. 
 $ cd PKSFZ
 
+# Menginstal semua persyaratan yang diperlukan
 $ pip3 install -r persyaratan.txt
 
+# Memberikan izin eksekusi (+x) ke file instal.
 $ chmod +x instal
 
+# Menginstal PKSFZ
 $ ./instal
 ```
