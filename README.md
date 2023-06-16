@@ -2,7 +2,6 @@
 
 ![](https://github.com/FII14/PKSFZ/blob/main/pksfz.gif)
 
-<p align="center"><img src="https://img.shields.io/badge/DITENAGAI%20OLEH-PYTHON3-blue?style=flat-square" /></p>
 
 PKSFZ adalah sebuah program sederhana yang ditulis dalam Python3 yang bertujuan untuk membantu dalam memecahkan kata sandi pada file zip menggunakan metode serangan kamus (dictionary attack).
 
