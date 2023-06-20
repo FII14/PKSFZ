@@ -16,7 +16,7 @@ $ git clone https://github.com/FII14/PKSFZ
 # Ubah direktori kerja saat ini ke direktori PKSFZ. 
 $ cd PKSFZ
 
-# Istal semua persyaratan yang diperlukan
+# Instal semua persyaratan yang diperlukan
 $ pip3 install -r persyaratan.txt
 
 # Berikan izin eksekusi (+x) ke file instal.
