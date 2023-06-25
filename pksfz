@@ -1,0 +1,81 @@
+#!/usr/bin/env python3
+
+import zipfile
+import os
+import time
+import sys
+from colorama import Fore
+
+h = Fore.GREEN
+m = Fore.RED
+p = Fore.RESET
+c = Fore.CYAN
+u = Fore.YELLOW
+
+if os.name == "nt":
+    os.system("cls")
+else:
+    os.system("clear")
+
+print(f"""{c}
++------------------------------------------+
+| Program : Pemecah kata sandi file ZIP    |
+| Pembuat : Rofi [FII14]                   |
+| Github  : https://github.com/FII14/PKSFZ |
++------------------------------------------+
+| COPYRIGHT (C) 2023 FII14                 |
++------------------------------------------+
+{p}""")
+
+while True:
+    try:
+        # Meminta input nama file ZIP
+        nama_file_zip = input("Masukkan nama file ZIP: ")
+
+        # Memeriksa apakah file ZIP ada
+        if not os.path.isfile(nama_file_zip):
+            print(f"{u}File ZIP tidak ditemukan.{p}")
+        else:
+            print(f"{p}File ZIP {m}-> {h}{nama_file_zip}{p}")
+            break
+    except KeyboardInterrupt:
+        print(f"\n{m}Keluar dari program PKSFZ{p}")
+        exit(0)
+
+while True:
+    try:
+        # Meminta input nama file wordlist
+        nama_file_wordlist = input("Masukkan nama file wordlist: ")
+
+        # Memeriksa apakah file wordlist ada
+        if not os.path.isfile(nama_file_wordlist):
+            print(f"{u}File wordlist tidak ditemukan.{p}")
+        else:
+            print(f"{p}File wordlist {m}-> {h}{nama_file_wordlist}{p}")
+            break
+    except KeyboardInterrupt:
+        print(f"\n{m}Keluar dari program PKSFZ{p}")
+        exit(0)
+
+# Membaca file wordlist dan mencoba kata sandi
+with open(nama_file_wordlist, 'r') as wordlist:
+    kata_sandi_ditemukan = False
+    for kata_sandi in wordlist:
+        kata_sandi = kata_sandi.strip()
+        try:
+            with zipfile.ZipFile(nama_file_zip, 'r') as file_zip:
+                sys.stdout.write(f"\r{p}Mencoba kata sandi: {m}{kata_sandi} {p}")
+                sys.stdout.flush()
+                time.sleep(0.1)  # Waktu jeda animasi
+                file_zip.extractall(pwd=kata_sandi.encode())
+                sys.stdout.write("\n")
+                print(f"\n{h}[+] {p}Kata sandi ditemukan: {h}{kata_sandi}{p}")
+                kata_sandi_ditemukan = True
+                break
+        except Exception:
+            sys.stdout.write("\rMencoba kata sandi:                    ")
+            sys.stdout.flush()
+
+    if not kata_sandi_ditemukan:
+        sys.stdout.write("\rMencoba kata sandi:                    \n")
+        print(f"\n{m}[-] {p}Kata sandi tidak ditemukan dalam wordlist.")
