@@ -50,4 +50,4 @@ TANGGUNG JAWAB, BAIK DALAM TINDAKAN KONTRAK, KESALAHAN ATAU LAINNYA, YANG TIMBUL
 DARI ATAU SEHUBUNGAN DENGAN PERANGKAT LUNAK ATAU PENGGUNAAN ATAU TRANSAKSI LAIN DALAM
 PERANGKAT LUNAK.
 
-Video: [](https://youtube.com/shorts/xb85bkld7Ok?feature=share)
+Video: [https://youtube.com/shorts/xb85bkld7Ok?feature=share](https://youtube.com/shorts/xb85bkld7Ok?feature=share)
