@@ -27,35 +27,23 @@ print(f"""{c}
 +------------------------------------------+
 {p}""")
 
-while True:
-    try:
-        # Meminta input nama file ZIP
-        nama_file_zip = input("Masukkan nama file ZIP: ")
+# Meminta input nama file ZIP
+nama_file_zip = input("Masukkan nama file ZIP: ")
 
-        # Memeriksa apakah file ZIP ada
-        if not os.path.isfile(nama_file_zip):
-            print(f"{u}File ZIP tidak ditemukan.{p}")
-        else:
-            print(f"{p}File ZIP {m}-> {h}{nama_file_zip}{p}")
-            break
-    except KeyboardInterrupt:
-        print(f"\n{m}Keluar dari program PKSFZ{p}")
-        exit(0)
+# Memeriksa apakah file ZIP ada
+if not os.path.isfile(nama_file_zip):
+    print(f"{u}File ZIP tidak ditemukan.{p}")
+else:
+    print(f"{p}File ZIP {m}-> {h}{nama_file_zip}{p}")
 
-while True:
-    try:
-        # Meminta input nama file wordlist
-        nama_file_wordlist = input("Masukkan nama file wordlist: ")
+# Meminta input nama file wordlist
+nama_file_wordlist = input("Masukkan nama file wordlist: ")
 
-        # Memeriksa apakah file wordlist ada
-        if not os.path.isfile(nama_file_wordlist):
-            print(f"{u}File wordlist tidak ditemukan.{p}")
-        else:
-            print(f"{p}File wordlist {m}-> {h}{nama_file_wordlist}{p}")
-            break
-    except KeyboardInterrupt:
-        print(f"\n{m}Keluar dari program PKSFZ{p}")
-        exit(0)
+# Memeriksa apakah file wordlist ada
+if not os.path.isfile(nama_file_wordlist):
+print(f"{u}File wordlist tidak ditemukan.{p}")
+else:
+    print(f"{p}File wordlist {m}-> {h}{nama_file_wordlist}{p}")            
 
 # Membaca file wordlist dan mencoba kata sandi
 with open(nama_file_wordlist, 'r') as wordlist:
