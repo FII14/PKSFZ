@@ -32,7 +32,8 @@ nama_file_zip = input("Masukkan nama file ZIP: ")
 
 # Memeriksa apakah file ZIP ada
 if not os.path.isfile(nama_file_zip):
-    print(f"{u}File ZIP tidak ditemukan.{p}")
+    print(f"{m}[-] {m}File ZIP tidak ditemukan.{p}")
+    exit()
 else:
     print(f"{p}File ZIP {m}-> {h}{nama_file_zip}{p}")
 
@@ -41,7 +42,9 @@ nama_file_wordlist = input("Masukkan nama file wordlist: ")
 
 # Memeriksa apakah file wordlist ada
 if not os.path.isfile(nama_file_wordlist):
-    print(f"{u}File wordlist tidak ditemukan.{p}")
+    print(f"{m}[-] {p}File wordlist tidak ditemukan.{p}")
+    exit()
+
 else:
     print(f"{p}File wordlist {m}-> {h}{nama_file_wordlist}{p}")            
 
