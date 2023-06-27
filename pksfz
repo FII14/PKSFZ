@@ -41,7 +41,7 @@ nama_file_wordlist = input("Masukkan nama file wordlist: ")
 
 # Memeriksa apakah file wordlist ada
 if not os.path.isfile(nama_file_wordlist):
-print(f"{u}File wordlist tidak ditemukan.{p}")
+    print(f"{u}File wordlist tidak ditemukan.{p}")
 else:
     print(f"{p}File wordlist {m}-> {h}{nama_file_wordlist}{p}")            
 
