@@ -69,7 +69,7 @@ with open(nama_file_wordlist, 'r') as wordlist:
                 kata_sandi_ditemukan = True
                 break
         except Exception:
-            print("\rKata sandi salah: {kata_sandi})
+            print(f"\rKata sandi salah: {kata_sandi})
 
     if not kata_sandi_ditemukan:
         print(f"\n{m}[-] {p}Kata sandi tidak ditemukan dalam wordlist.")
