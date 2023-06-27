@@ -60,6 +60,7 @@ while True:
 # Membaca file wordlist dan mencoba kata sandi
 with open(nama_file_wordlist, 'r') as wordlist:
     kata_sandi_ditemukan = False
+    print()
     for kata_sandi in wordlist:
         kata_sandi = kata_sandi.strip()
         try:
